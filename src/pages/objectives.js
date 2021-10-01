@@ -63,6 +63,7 @@ const Objectives = () => {
       </Container>
       <Container>
         <h1 className="pageHeadingFont">Task Choices</h1>
+        <Row>
         <Col lg={4}>
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={aerialImg} alt="Aerial Robot" />
@@ -110,11 +111,13 @@ const Objectives = () => {
             </Card.Body>
           </Card>
         </Col>
+        </Row>
       </Container>
       <Container>
         <Card style={{ width: "75rem" }}>
           <Card.Body>
             <Card.Title>Goal</Card.Title>
+            <Row>
             <Col sm={6}>
               <img
                 className="pageImg"
@@ -136,6 +139,7 @@ const Objectives = () => {
                 vehicula quam.
               </Card.Text>
             </Col>
+            </Row>
           </Card.Body>
         </Card>
         <Link to="/hangar">

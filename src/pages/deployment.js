@@ -20,6 +20,7 @@ const Deployment = () => {
         <Row>
           <h1 className="pageHeadingFont">Deployment</h1>
         </Row>
+        <Row>
         <Card style={{ width: "75rem" }}>
           <Card.Body>
             <Card.Text className="pageBodyFont">
@@ -30,9 +31,12 @@ const Deployment = () => {
             </Card.Text>
           </Card.Body>
         </Card>
+        </Row>
+        <Row>
         <Col>
           <img className="pageImg" src={PageImage} alt="Global Logo"></img>
           </Col>
+          </Row>
       </Container>
     </>
   );

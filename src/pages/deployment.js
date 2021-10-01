@@ -11,7 +11,7 @@ import {
   FloatingLabel,
   Accordion,
 } from "react-bootstrap";
-import PageImage from "../public/assets/images/Logo_Full.png";
+import PageImage from "../assets/images/Logo_Full.png";
 
 const Deployment = () => {
   return (

@@ -10,11 +10,11 @@ import {
   Form,
   FloatingLabel,
 } from "react-bootstrap";
-import cardOneImg from "../public/assets/images/Objective_Photo.jpg";
-import aerialImg from "../public/assets/images/Info1.png";
-import groundImg from "../public/assets/images/Info2.png";
-import subterraneanImg from "../public/assets/images/Info3.png";
-import goalImg from "../public/assets/images/Goal_Photo.jpg";
+import cardOneImg from "../assets/images/Objective_Photo.jpg";
+import aerialImg from "../assets/images/Info1.png";
+import groundImg from "../assets/images/Info2.png";
+import subterraneanImg from "../assets/images/Info3.png";
+import goalImg from "../assets/images/Goal_Photo.jpg";
 
 const Objectives = () => {
   return (

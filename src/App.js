@@ -11,7 +11,7 @@ import {
   Form,
   className,
 } from "react-bootstrap";
-import NavBarImage from "./public/assets/images/Logo_Small.png";
+import NavBarImage from "./assets/images/Logo_Small.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import TermsOfUse from "./pages/terms";

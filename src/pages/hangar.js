@@ -12,7 +12,7 @@ import {
   Accordion,
 } from "react-bootstrap";
 
-import robotBackgroundimg from "../public/assets/images/Background.jpg";
+import robotBackgroundimg from "../assets/images/Background.jpg";
 
 const Hangar = () => {
   return (

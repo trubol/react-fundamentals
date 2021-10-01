@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import {
-  Navbar,
-  Nav,
   Container,
   Row,
   Col,
@@ -14,58 +12,34 @@ import {
   Accordion,
 } from "react-bootstrap";
 
+import robotBackgroundimg from "../public/assets/images/Background.jpg";
+
 const Hangar = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
       <Container>
         <Row>
-          <h1>Hangar</h1>
+          <h1 className="pageHeadingFont">Hangar</h1>
         </Row>
         <Card style={{ width: "75rem" }}>
           <Card.Body>
-            <Card.Title>Deployment Contract</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-              Card Subtitle
-            </Card.Subtitle>
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              bibendum ipsum fringilla velit rutrum, ac maximus dui porttitor.
+              Vestibulum varius pellentesque odio eu laoreet. Proin est metus,
+              egestas id accumsan eu, semper ac urna. Nam ac auctor eros. Sed
+              vestibulum libero ut tincidunt ornare. Donec fermentum lectus leo,
+              tincidunt gravida augue laoreet ut. Pellentesque sed libero
+              vehicula, euismod nisl ac, vehicula lectus. Cras in ex laoreet,
+              lacinia orci lobortis, varius dolor. Praesent ut metus semper,
+              lacinia velit et, cursus diam. Nullam eu elit nec diam vehicula
+              pretium. Vestibulum vel elit sed arcu tristique mollis vitae
+              vehicula quam.
             </Card.Text>
           </Card.Body>
         </Card>
       </Container>
-      <Container>
-        <Card style={{ width: "75rem" }}>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Col sm={6}>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Col>
-            <Col sm={6}>
-              <Image src="holder.js/171x180" thumbnail />
-            </Col>
-          </Card.Body>
-        </Card>
-      </Container>
-
+     
       <Container>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
@@ -122,25 +96,37 @@ const Hangar = () => {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Customize Your Robot</Accordion.Header>
             <Accordion.Body>
+                <Col>
+                <img
+                className="pageImg"
+                src={robotBackgroundimg}
+                alt="Robot Warehouse"
+              ></img>
+                </Col>
+                <Col>
+              <Form>
 
-<Form>
-              
-              <ButtonGroup vertical>
-              <Form.Label>Select Body</Form.Label>
-                <Button>Body One</Button>
-                <Button>Body Two</Button>
-                <Button>Body Three</Button>
-                <Button>Body Four</Button>
-              </ButtonGroup>
+                <ButtonGroup vertical>
+                  <Form.Label>Select Body</Form.Label>
+                  <Button>Body One</Button>
+                  <Button>Body Two</Button>
+                  <Button>Body Three</Button>
+                  <Button>Body Four</Button>
+                </ButtonGroup>
 
-              <ButtonGroup vertical>
-              <Form.Label>Select Arms</Form.Label>
-                <Button>Arms One</Button>
-                <Button>Arms Two</Button>
-                <Button>Arms Three</Button>
-                <Button>Arms Four</Button>
-              </ButtonGroup>
-</Form>
+                <ButtonGroup vertical>
+                  <Form.Label>Select Arms</Form.Label>
+                  <Button>Arms One</Button>
+                  <Button>Arms Two</Button>
+                  <Button>Arms Three</Button>
+                  <Button>Arms Four</Button>
+                </ButtonGroup>
+               
+              </Form>
+              </Col>
+              <Button variant="primary" type="submit">
+                  Save Your Robot
+                </Button>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

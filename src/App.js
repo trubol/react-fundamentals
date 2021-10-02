@@ -37,13 +37,13 @@ function App() {
             </Navbar.Brand>
             </Link>
             <Nav className="me-auto">
-              <Link to="/objectives" className="navStyleObjective pl-5">
+              <Link to="/objectives" className="navStyleObjective px-auto">
                 Objective
               </Link>
-              <Link to="/hangar" className="navStyleObjective  pl-5">
+              <Link to="/hangar" className="navStyleObjective px-auto">
                 Hangar
               </Link>
-              <Link to="/deployment" className="navStyleObjective pl-5">
+              <Link to="/deployment" className="navStyleObjective px-auto">
                 Deployment
               </Link>
             </Nav>

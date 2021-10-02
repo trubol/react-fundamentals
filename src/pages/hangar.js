@@ -10,6 +10,7 @@ import {
   Form,
   FloatingLabel,
   Accordion,
+  ProgressBar,
 } from "react-bootstrap";
 
 import robotBackgroundimg from "../assets/images/Background.jpg";
@@ -160,6 +161,14 @@ const Hangar = () => {
                   </Form>
                 </Col>
               </Row>
+              <Row>
+                <h2>Specs</h2>
+                <h2>Weight</h2>
+                <ProgressBar variant="danger" now={60} /><br />
+                <ProgressBar variant="success" now={60} /><br />
+                <ProgressBar now={60} /><br />
+                <ProgressBar variant="warning"now={60} /><br />
+                </Row>
               <Button variant="primary" id="robotSubmitBtn" type="submit">
                 Save Your Robot
               </Button>
